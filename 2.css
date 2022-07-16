@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #000000;
+    color: white;
+}
+  
+.container-1{
+    
+    display: inline-block;
+    font-size: 40px;
+    font-weight: lighter;
+    margin-top: 3em;
+}
+.sidetext{
+  text-align: right;
+  display: inline-block;
+  font-size: 40px;
+  font-weight: lighter;
+  padding: 1.3rem;
+  margin-left: 800px;
+}
+i {
+    font-size: 2rem;
+    color: rgb(25, 0, 255);
+    cursor: pointer;
+  }
+  .popup-box {
+  border: 1px solid red;
+  border-radius: 15px;
+  color: red;
+  width: 75vw;
+  max-width: 350px;
+  z-index: 1;
+  text-align: center;
+  padding: 2.5rem;
+  font-size: 20px;
+  box-shadow: 5px 5px 10px rgb(202, 197, 197);
+  background-color: white;
+  position: absolute;
+  top: 35%;
+  left: 35%;
+ }
+ input{
+    border-radius: 5px;
+    width: 70%;
+    max-width: 270px;
+    height: 35px;
+    box-shadow: 5px 3px 10px rgb(202, 197, 197);
+    border: 1px solid red;
+    display: block;
+    margin: auto;
+  }
+  .popup-box-button {
+    width: 80px;
+    height: 35px;
+    font-size: 20px;
+    background-color: red;
+    color: white;
+    border: 0px;
+    border-radius: 20px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 10px;
+    box-sizing: border-box;
+    padding: 0.35rem;
+  }
+  .blur {
+    filter: blur(5px);
+  }
+  .box {
+    position: relative;
+    border: 2px solid red;
+    min-height: 300px;
+    width: 200px;
+    margin: 25px;
+    border-radius: 10px;
+    font-size: 25px;
+    text-align: center;
+    padding: 20px 10px 3.5rem;
+    color: red;
+    box-shadow: 5px 5px 10px rgb(209, 204, 204);
+    background-color: white;
+  }
+  #box-heading{
+    cursor: pointer;
+    font-size: 2rem;
+  }
+  .button-container {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+  }
+  .button-container i {
+    padding: 0.5rem;
+  }
+  i {
+    font-size: 2rem;
+    color: red;
+    cursor: pointer;
+  }
+  .container-2 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 75vw;
+    margin: auto;
+    color: white;
+  }
+    .container-3 {
+      font-size: 30px;
+      display: flex;
+      visibility: hidden;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      left: 20rem;
+      right: 20rem;
+      top:3rem;
+    }
+
+    .task {
+      margin: 0.5rem;
+    }
+
+    .task-text {
+      padding: 0.5rem;
+      font-weight: bold;    
+      font-size: 1rem;
+      color: black;
+    }
+
+    .done-button {
+      background-color: rgb(174, 226, 234);
+      border: 0.5px solid rgb(111, 107, 107);
+      color: white;
+      border-radius: 0.5rem;
+    }
+    .done-button:hover {
+      background-color: rgb(168, 168, 229);
+      box-shadow: 1px 1px 5px rgb(182, 168, 168);
+    }
+    
+  @keyframes popupbox {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1)
+      }
+    }
